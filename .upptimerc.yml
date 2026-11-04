@@ -1,31 +1,60 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: ParedesYTecho
+repo: Werewolf-Status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Bot conectado a Discord
+    url: https://werewolfbot-c8v6.onrender.com/health
+    expectedStatusCodes: [200]
+    __dangerous__body_down_if_text_missing: '"connected": true'
+  - name: Servidor de Render
+    url: https://werewolfbot-c8v6.onrender.com
+  - name: Web pública
+    url: https://werewolfdashboard.vercel.app/
+  - name: Base de datos
+    url: https://werewolfdashboard.vercel.app/api/estado
+    expectedStatusCodes: [200]
+    __dangerous__body_down_if_text_missing: '"key":"db","name":"Base de datos","state":"ok"'
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /Werewolf-Status
+  logoUrl: https://raw.githubusercontent.com/ParedesYTecho/Werewolf-Status/master/assets/logo.png
+  name: Werewolf · Estado del servicio
+  introTitle: "**Werewolf**: estado del servicio"
+  introMessage: Comprobaciones automáticas del bot de Discord, el servidor, la web y la base de datos. Esta página es independiente de la web y del servidor del bot. El historial empieza el día en que se activó.
   navbar:
-    - title: Status
+    - title: Estado
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Web
+      href: https://werewolfdashboard.vercel.app/
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+commitMessages:
+  commitAuthorName: Upptime Bot
+  commitAuthorEmail: 73812536+upptime-bot@users.noreply.github.com
+skipDescriptionUpdate: true
+skipTopicsUpdate: true
+skipHomepageUpdate: true
+secrets: []
+
+i18n:
+  up: Operativo
+  down: Caído
+  degraded: Degradado
+  url: Dirección
+  status: Estado
+  history: Historial
+  ms: ms
+  responseTime: Tiempo de respuesta
+  responseTimeDay: Tiempo de respuesta (24 h)
+  responseTimeWeek: Tiempo de respuesta (7 días)
+  responseTimeMonth: Tiempo de respuesta (30 días)
+  responseTimeYear: Tiempo de respuesta (1 año)
+  uptime: Disponibilidad
+  uptimeDay: Disponibilidad (24 h)
+  uptimeWeek: Disponibilidad (7 días)
+  uptimeMonth: Disponibilidad (30 días)
+  uptimeYear: Disponibilidad (1 año)
+  liveStatus: Estado actual
+  allSystemsOperational: Todos los servicios operativos
+  degradedPerformance: Rendimiento degradado
+  completeOutage: Caída total
+  partialOutage: Caída parcial
