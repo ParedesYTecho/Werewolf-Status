@@ -58,3 +58,6 @@ i18n:
   degradedPerformance: Rendimiento degradado
   completeOutage: Caída total
   partialOutage: Caída parcial
+
+workflowSchedule:
+  uptime: "3-59/10 * * * *"
