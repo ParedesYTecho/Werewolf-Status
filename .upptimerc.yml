@@ -23,7 +23,7 @@ status-website:
   introMessage: Comprobaciones automáticas del bot de Discord, el servidor, la web y la base de datos. Esta página es independiente de la web y del servidor del bot. El historial empieza el día en que se activó.
   navbar:
     - title: Estado
-      href: /
+      href: https://paredesytecho.github.io/Werewolf-Status/
     - title: Web
       href: https://werewolfdashboard.vercel.app/
 
