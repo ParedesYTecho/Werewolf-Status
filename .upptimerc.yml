@@ -16,7 +16,7 @@ sites:
     __dangerous__body_down_if_text_missing: '"key":"db","name":"Base de datos","state":"ok"'
   - name: Prueba temporal de incidencias
     url: https://werewolfdashboard.vercel.app/
-    __dangerous__body_down_if_text_missing: 'ZZZ-texto-inexistente'
+    __dangerous__body_down_if_text_missing: '<html'
 
 status-website:
   baseUrl: /Werewolf-Status
